@@ -1,5 +1,5 @@
 public class SimulationDriver {
     public static void main(String[] args) {
-        System.out.println("iVote Simulator");
+        System.out.println("Welcome to iVote Simulator");
     }
 }
