@@ -81,11 +81,4 @@ public class VotingService {
         displayMap.forEach((answer, amount) -> System.out.println(answer + ": " + amount));
     }
 
-
-    // configure question types, multiple choice or single choice
-    // configure candidate answers for each type
-    // then can accept submissions from students
-    // each student can only submit one answer, if multiple only last submission is counted
-    // can output statistics of submission results
-
 }

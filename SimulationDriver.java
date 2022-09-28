@@ -1,4 +1,7 @@
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
 
 /*
 Driver to simulate using the voting service sample questions, answers, and
@@ -7,13 +10,6 @@ randomly generated students with their randomly generated answers
 public class SimulationDriver {
     // Main method
     public static void main(String[] args) {
-        // create a question type
-        // configure the answers
-        // configure the question for the ivote service
-        // randomly generate a number of students and answers
-        // submit all students' anssers to iVote service
-        // call voting service output function to display result
-
         // Configure question type to multiple choice and configure question by initializing a Question object
         Question multipleChoiceQuestion = new Question(true, "What is the answer?");
 
@@ -39,7 +35,8 @@ public class SimulationDriver {
             }
 
             // Submit an answer using the random student object's answer method which accepts an array of answers
-            randomStudent.answer(choices);
+            Set<String> choiceSet = new HashSet<>(Arrays.asList(choices));
+            randomStudent.answer(choiceSet.toArray(new String[0]));
         }
 
         // Output statistics using the voting service's output statistics method

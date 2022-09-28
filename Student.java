@@ -2,9 +2,6 @@ import java.util.Random;
 import java.util.UUID;
 
 class Student {
-    // allow student to submit answer to ivote service
-    // has a unique ID string
-
     // Unique ID of student
     private final String uniqueId;
 
